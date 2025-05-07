@@ -52,7 +52,7 @@ let Ques=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
 setInterval(() => {
     let bubble = new bubbles();
     bubblesArray.push(bubble);
-}, 1900);
+}, 1300);
 
 addEventListener("keydown", function (event) {
     if (life <= 0 && event.key === "Enter") {
@@ -89,7 +89,7 @@ function updateAnimation() {
 
 
     if(life<=0){
-        context.font = "80px Arial";
+        context.font = "20px Arial";
         context.textAlign = "center"; 
         context.textBaseline = "middle"; 
         context.clearRect(0, 0, canvas.width, canvas.height);
